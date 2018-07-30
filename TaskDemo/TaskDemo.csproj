@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{237B2A6D-F3D8-4A49-AF18-1737BF2804EE}</ProjectGuid>
+    <ProjectGuid>{28CEA0A2-661B-4C6F-BD99-BE2EF9D3A256}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>杂项</RootNamespace>
-    <AssemblyName>杂项</AssemblyName>
+    <RootNamespace>TaskDemo</RootNamespace>
+    <AssemblyName>TaskDemo</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

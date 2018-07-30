@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AC0B5A63-C035-4A0D-B9CA-9A253E00859D}</ProjectGuid>
+    <ProjectGuid>{3B9627CE-007C-4CC7-B140-2FA0BF7ED959}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TestDemo</RootNamespace>
-    <AssemblyName>TestDemo</AssemblyName>
+    <RootNamespace>SortDemo</RootNamespace>
+    <AssemblyName>SortDemo</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,9 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Person.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

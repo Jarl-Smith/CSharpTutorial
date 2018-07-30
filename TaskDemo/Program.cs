@@ -1,8 +1,9 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace TaskDemo {
     class Program {
@@ -12,7 +13,7 @@ namespace TaskDemo {
             Program p = new Program();
 
             //Task.Run(() => { p.MaiPiao(); });//基于任务式异步编程
-            Task.Run(()=> { p.CheckLogAsync(); });
+            Task.Run(() => { p.CheckLogAsync(); });
             Console.ReadLine();//保持主线程运行，防止因主线程运行完毕而后台线程未运行完毕直接关闭
         }
         async void MaiPiao() {
@@ -33,4 +34,3 @@ namespace TaskDemo {
         }
     }
 }
-
