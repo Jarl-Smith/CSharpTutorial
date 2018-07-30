@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DAD28BA8-BDC6-48B6-A44E-2A700BE537E0}</ProjectGuid>
+    <ProjectGuid>{237B2A6D-F3D8-4A49-AF18-1737BF2804EE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ThreadDemo</RootNamespace>
-    <AssemblyName>ThreadDemo</AssemblyName>
+    <RootNamespace>杂项</RootNamespace>
+    <AssemblyName>杂项</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyLogger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

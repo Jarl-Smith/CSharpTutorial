@@ -1,6 +1,0 @@
-E:\CSharpProject\CSharpTutorial\ThreadDemo\obj\Debug\ThreadDemo.csprojResolveAssemblyReference.cache
-E:\CSharpProject\CSharpTutorial\ThreadDemo\bin\Debug\ThreadDemo.exe.config
-E:\CSharpProject\CSharpTutorial\ThreadDemo\bin\Debug\ThreadDemo.exe
-E:\CSharpProject\CSharpTutorial\ThreadDemo\bin\Debug\ThreadDemo.pdb
-E:\CSharpProject\CSharpTutorial\ThreadDemo\obj\Debug\ThreadDemo.exe
-E:\CSharpProject\CSharpTutorial\ThreadDemo\obj\Debug\ThreadDemo.pdb

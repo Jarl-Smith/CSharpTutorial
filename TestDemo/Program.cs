@@ -16,11 +16,12 @@ namespace FeiCui.Unity
 
             static void CustomClassQuery()
             {
+                //创建自定义类数组，此处用到了初始化器，如果没有指定所调用的构造函数，则默认使用无参构造函数
                 Person[] array = new Person[]
                 {
-                    new Person(){Id=1,Age=10,Name="张三",Weight=100 },
-                    new Person(){Id=3,Age=11,Name="lisi",Weight=111 },
-                    new Person(){Id=2,Age=9,Name="wangwu",Weight=90 }
+                    new Person{Id=1,Age=10,Name="张三",Weight=100 },
+                    new Person{Id=3,Age=11,Name="lisi",Weight=111 },
+                    new Person{Id=2,Age=9,Name="wangwu",Weight=90 }
                 };
                 Person min, max;
                 MaxAndMin<Person, int>(array, (Person p) => { return p.Age; }, out min, out max);
