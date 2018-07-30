@@ -1,0 +1,6 @@
+E:\CSharpProject\CSharpTutorial\杂项\bin\Debug\杂项.exe.config
+E:\CSharpProject\CSharpTutorial\杂项\bin\Debug\杂项.exe
+E:\CSharpProject\CSharpTutorial\杂项\bin\Debug\杂项.pdb
+E:\CSharpProject\CSharpTutorial\杂项\obj\Debug\杂项.csprojResolveAssemblyReference.cache
+E:\CSharpProject\CSharpTutorial\杂项\obj\Debug\杂项.exe
+E:\CSharpProject\CSharpTutorial\杂项\obj\Debug\杂项.pdb

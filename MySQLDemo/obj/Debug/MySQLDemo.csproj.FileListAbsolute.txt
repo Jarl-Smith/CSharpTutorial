@@ -1,0 +1,7 @@
+E:\CSharpProject\CSharpTutorial\MySQLDemo\bin\Debug\MySQLDemo.exe.config
+E:\CSharpProject\CSharpTutorial\MySQLDemo\bin\Debug\MySQLDemo.exe
+E:\CSharpProject\CSharpTutorial\MySQLDemo\bin\Debug\MySQLDemo.pdb
+E:\CSharpProject\CSharpTutorial\MySQLDemo\bin\Debug\MySql.Data.dll
+E:\CSharpProject\CSharpTutorial\MySQLDemo\obj\Debug\MySQLDemo.csprojResolveAssemblyReference.cache
+E:\CSharpProject\CSharpTutorial\MySQLDemo\obj\Debug\MySQLDemo.exe
+E:\CSharpProject\CSharpTutorial\MySQLDemo\obj\Debug\MySQLDemo.pdb
