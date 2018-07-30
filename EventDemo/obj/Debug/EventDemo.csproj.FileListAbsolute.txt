@@ -1,6 +1,0 @@
-E:\CSharpProject\CSharpTutorial\EventDemo\bin\Debug\EventDemo.exe.config
-E:\CSharpProject\CSharpTutorial\EventDemo\bin\Debug\EventDemo.exe
-E:\CSharpProject\CSharpTutorial\EventDemo\bin\Debug\EventDemo.pdb
-E:\CSharpProject\CSharpTutorial\EventDemo\obj\Debug\EventDemo.exe
-E:\CSharpProject\CSharpTutorial\EventDemo\obj\Debug\EventDemo.pdb
-E:\CSharpProject\CSharpTutorial\EventDemo\obj\Debug\EventDemo.csprojResolveAssemblyReference.cache

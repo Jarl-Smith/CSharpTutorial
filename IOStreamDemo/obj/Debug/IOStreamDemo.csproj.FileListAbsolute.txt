@@ -1,6 +1,0 @@
-E:\CSharpProject\CSharpTutorial\IOStreamDemo\bin\Debug\IOStreamDemo.exe.config
-E:\CSharpProject\CSharpTutorial\IOStreamDemo\bin\Debug\IOStreamDemo.exe
-E:\CSharpProject\CSharpTutorial\IOStreamDemo\bin\Debug\IOStreamDemo.pdb
-E:\CSharpProject\CSharpTutorial\IOStreamDemo\obj\Debug\IOStreamDemo.csprojResolveAssemblyReference.cache
-E:\CSharpProject\CSharpTutorial\IOStreamDemo\obj\Debug\IOStreamDemo.exe
-E:\CSharpProject\CSharpTutorial\IOStreamDemo\obj\Debug\IOStreamDemo.pdb

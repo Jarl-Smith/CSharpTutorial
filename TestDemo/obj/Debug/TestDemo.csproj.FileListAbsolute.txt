@@ -1,6 +1,0 @@
-E:\CSharpProject\CSharpTutorial\TestDemo\bin\Debug\TestDemo.exe.config
-E:\CSharpProject\CSharpTutorial\TestDemo\bin\Debug\TestDemo.exe
-E:\CSharpProject\CSharpTutorial\TestDemo\bin\Debug\TestDemo.pdb
-E:\CSharpProject\CSharpTutorial\TestDemo\obj\Debug\TestDemo.csprojResolveAssemblyReference.cache
-E:\CSharpProject\CSharpTutorial\TestDemo\obj\Debug\TestDemo.exe
-E:\CSharpProject\CSharpTutorial\TestDemo\obj\Debug\TestDemo.pdb
