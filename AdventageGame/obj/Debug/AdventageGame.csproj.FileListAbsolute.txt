@@ -1,0 +1,7 @@
+E:\CSharpProject\CSharpTutorial\AdventageGame\bin\Debug\AdventageGame.exe.config
+E:\CSharpProject\CSharpTutorial\AdventageGame\bin\Debug\AdventageGame.exe
+E:\CSharpProject\CSharpTutorial\AdventageGame\bin\Debug\AdventageGame.pdb
+E:\CSharpProject\CSharpTutorial\AdventageGame\obj\Debug\AdventageGame.csprojAssemblyReference.cache
+E:\CSharpProject\CSharpTutorial\AdventageGame\obj\Debug\AdventageGame.csproj.CoreCompileInputs.cache
+E:\CSharpProject\CSharpTutorial\AdventageGame\obj\Debug\AdventageGame.exe
+E:\CSharpProject\CSharpTutorial\AdventageGame\obj\Debug\AdventageGame.pdb
