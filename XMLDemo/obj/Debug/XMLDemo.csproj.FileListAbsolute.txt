@@ -1,0 +1,7 @@
+E:\CSharpProject\CSharpTutorial\XMLDemo\bin\Debug\XMLDemo.exe.config
+E:\CSharpProject\CSharpTutorial\XMLDemo\bin\Debug\XMLDemo.exe
+E:\CSharpProject\CSharpTutorial\XMLDemo\bin\Debug\XMLDemo.pdb
+E:\CSharpProject\CSharpTutorial\XMLDemo\obj\Debug\XMLDemo.csprojAssemblyReference.cache
+E:\CSharpProject\CSharpTutorial\XMLDemo\obj\Debug\XMLDemo.csproj.CoreCompileInputs.cache
+E:\CSharpProject\CSharpTutorial\XMLDemo\obj\Debug\XMLDemo.exe
+E:\CSharpProject\CSharpTutorial\XMLDemo\obj\Debug\XMLDemo.pdb

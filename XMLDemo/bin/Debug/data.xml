@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ROOT>
+	<table wave="1" enemyname="ground" level="1" wait="3"/>
+	<table wave="1" enemyname="ground" level="1" wait="3"/>
+	<table wave="2" enemyname="air" level="2" wait="4"/>
+	<table wave="2" enemyname="air" level="2" wait="4"/>
+	<table/>
+</ROOT>
