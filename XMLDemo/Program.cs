@@ -8,9 +8,12 @@ using System.Xml;
 namespace XMLDemo {
     class Program {
         static string filepath = "data.xml";
+        static string Path = "ItemDataBase.xml";
         static void Main( string[] args ) {
             //demo1();
-            demo2();
+            //demo2();
+            //demo3();
+            demo4();
         }
         //普通方法遍历XML结构
         static void demo1( ) {
@@ -41,7 +44,7 @@ namespace XMLDemo {
                 XmlElement root = document.DocumentElement;
                 if ( root.HasChildNodes ) {
                     foreach ( XmlNode node in root.ChildNodes ) {
-                        if(node.Attributes.Count < 1 ) {//如果当前节点没有属性
+                        if ( node.Attributes.Count < 1 ) {//如果当前节点没有属性
                             continue;
                         }
                         Console.Write("{0},{1}" , "wave" , node.Attributes["wave"].Value);
@@ -56,6 +59,41 @@ namespace XMLDemo {
             } catch ( System.IO.IOException e ) {
 
             }
+        }
+        //XmlDocument创建XML文件
+        static void demo3( ) {
+            XmlDocument xmlDoc = new XmlDocument();
+            XmlDeclaration declare = xmlDoc.CreateXmlDeclaration("1.0" , "utf-8" , "yes");
+            xmlDoc.AppendChild(declare);
+            XmlElement root = xmlDoc.CreateElement("root");
+            xmlDoc.AppendChild(root);
+            XmlElement sub1 = xmlDoc.CreateElement("Student");
+            sub1.SetAttribute("id" , "1");
+            root.AppendChild(sub1);
+            XmlElement sub2 = xmlDoc.CreateElement("Name");
+            sub2.InnerText = "Jack";
+            XmlElement sub2_2 = xmlDoc.CreateElement("Age");
+            sub2_2.InnerText = "14";
+            sub1.AppendChild(sub2);
+            sub1.AppendChild(xmlDoc.CreateComment("This is Comment"));
+            sub1.AppendChild(sub2_2);
+            xmlDoc.Save(filepath);
+        }
+        //XmlDocument修改XML文件
+        static void demo4( ) {
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.Load(filepath);
+            xmlDoc["root"]["Student"].SetAttribute("id" , "345");
+            XmlElement sub1_1 = xmlDoc.CreateElement("Student");
+            sub1_1.SetAttribute("id" , "2");
+            XmlElement sub2 = xmlDoc.CreateElement("Name");
+            sub2.InnerText = "Mike";
+            XmlElement sub2_2 = xmlDoc.CreateElement("Age");
+            sub2_2.InnerText = "23";
+            sub1_1.AppendChild(sub2);
+            sub1_1.AppendChild(sub2_2);
+            xmlDoc["root"].InsertAfter(sub1_1 , xmlDoc["root"]["Student"]);
+            xmlDoc.Save(filepath);
         }
     }
 }

@@ -1,0 +1,7 @@
+E:\CSharpProject\CSharpTutorial\DataStructure\bin\Debug\DataStructure.exe.config
+E:\CSharpProject\CSharpTutorial\DataStructure\bin\Debug\DataStructure.exe
+E:\CSharpProject\CSharpTutorial\DataStructure\bin\Debug\DataStructure.pdb
+E:\CSharpProject\CSharpTutorial\DataStructure\obj\Debug\DataStructure.csprojAssemblyReference.cache
+E:\CSharpProject\CSharpTutorial\DataStructure\obj\Debug\DataStructure.csproj.CoreCompileInputs.cache
+E:\CSharpProject\CSharpTutorial\DataStructure\obj\Debug\DataStructure.exe
+E:\CSharpProject\CSharpTutorial\DataStructure\obj\Debug\DataStructure.pdb
