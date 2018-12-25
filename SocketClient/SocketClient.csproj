@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D5462349-88F6-4EA5-99DC-6168533206C7}</ProjectGuid>
+    <ProjectGuid>{3F740337-CBE6-458F-AE5C-0512DD5E1644}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DataStructure</RootNamespace>
-    <AssemblyName>DataStructure</AssemblyName>
+    <RootNamespace>SocketClient</RootNamespace>
+    <AssemblyName>SocketClient</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IListDs.cs" />
-    <Compile Include="LinkedList.cs" />
-    <Compile Include="Node.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SeqList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

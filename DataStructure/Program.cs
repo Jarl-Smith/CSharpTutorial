@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace DataStructure {
     class Program {
         static void Main( string[] args ) {
-
+            string exp = "{()}[{}]";
+            Console.WriteLine(IsCorrect(exp));
         }
 
         /// <summary>
@@ -39,6 +40,49 @@ namespace DataStructure {
             } catch ( FormatException e ) {
                 Console.WriteLine("Invalid Input");
             }
+        }
+        /// <summary>
+        /// 检查括号字符串是否嵌套正确,即只能嵌套成对儿，不能单个
+        /// </summary>
+        /// <param name="exp"></param>
+        /// <returns></returns>
+        static bool IsCorrect( string exp ) {
+            char[] array = exp.ToArray();
+            Stack<char> s = new Stack<char>();
+            s.Push(array[0]);
+            for ( int i = 1 ; i < array.Length ; i++ ) {
+                if ( s.Count == 0 ) {
+                    s.Push(array[i]);
+                    continue;
+                }
+                switch ( s.Peek() ) {
+                    case '(':
+                        if ( array[i] == ')' ) {
+                            s.Pop();
+                        } else {
+                            s.Push(array[i]);
+                        }
+                        break;
+                    case '{':
+                        if ( array[i] == '}' ) {
+                            s.Pop();
+                        } else {
+                            s.Push(array[i]);
+                        }
+                        break;
+                    case '[':
+                        if ( array[i] == ']' ) {
+                            s.Pop();
+                        } else {
+                            s.Push(array[i]);
+                        }
+                        break;
+                    default:
+                        s.Push(array[i]);
+                        break;
+                }
+            }
+            return s.Count == 0;
         }
     }
 }

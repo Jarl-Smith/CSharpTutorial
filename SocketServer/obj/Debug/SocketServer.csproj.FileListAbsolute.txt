@@ -1,0 +1,7 @@
+E:\CSharpProject\CSharpTutorial\SocketServer\bin\Debug\SocketServer.exe.config
+E:\CSharpProject\CSharpTutorial\SocketServer\bin\Debug\SocketServer.exe
+E:\CSharpProject\CSharpTutorial\SocketServer\bin\Debug\SocketServer.pdb
+E:\CSharpProject\CSharpTutorial\SocketServer\obj\Debug\SocketServer.csproj.CoreCompileInputs.cache
+E:\CSharpProject\CSharpTutorial\SocketServer\obj\Debug\SocketServer.exe
+E:\CSharpProject\CSharpTutorial\SocketServer\obj\Debug\SocketServer.pdb
+E:\CSharpProject\CSharpTutorial\SocketServer\obj\Debug\SocketServer.csprojAssemblyReference.cache

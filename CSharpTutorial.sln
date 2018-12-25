@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionDemo", "Reflectio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructure", "DataStructure\DataStructure.csproj", "{D5462349-88F6-4EA5-99DC-6168533206C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketClient", "SocketClient\SocketClient.csproj", "{3F740337-CBE6-458F-AE5C-0512DD5E1644}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketServer", "SocketServer\SocketServer.csproj", "{D24EB37C-C088-45BF-9BD8-6D2147BB5663}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -121,6 +125,22 @@ Global
 		{D5462349-88F6-4EA5-99DC-6168533206C7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D5462349-88F6-4EA5-99DC-6168533206C7}.Release|x86.ActiveCfg = Release|Any CPU
 		{D5462349-88F6-4EA5-99DC-6168533206C7}.Release|x86.Build.0 = Release|Any CPU
+		{3F740337-CBE6-458F-AE5C-0512DD5E1644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F740337-CBE6-458F-AE5C-0512DD5E1644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F740337-CBE6-458F-AE5C-0512DD5E1644}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3F740337-CBE6-458F-AE5C-0512DD5E1644}.Debug|x86.Build.0 = Debug|Any CPU
+		{3F740337-CBE6-458F-AE5C-0512DD5E1644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F740337-CBE6-458F-AE5C-0512DD5E1644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F740337-CBE6-458F-AE5C-0512DD5E1644}.Release|x86.ActiveCfg = Release|Any CPU
+		{3F740337-CBE6-458F-AE5C-0512DD5E1644}.Release|x86.Build.0 = Release|Any CPU
+		{D24EB37C-C088-45BF-9BD8-6D2147BB5663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D24EB37C-C088-45BF-9BD8-6D2147BB5663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D24EB37C-C088-45BF-9BD8-6D2147BB5663}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D24EB37C-C088-45BF-9BD8-6D2147BB5663}.Debug|x86.Build.0 = Debug|Any CPU
+		{D24EB37C-C088-45BF-9BD8-6D2147BB5663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D24EB37C-C088-45BF-9BD8-6D2147BB5663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D24EB37C-C088-45BF-9BD8-6D2147BB5663}.Release|x86.ActiveCfg = Release|Any CPU
+		{D24EB37C-C088-45BF-9BD8-6D2147BB5663}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
