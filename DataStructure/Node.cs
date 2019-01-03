@@ -29,6 +29,5 @@ namespace DataStructure {
             Data = value;
             Next = node;
         }
-
     }
 }

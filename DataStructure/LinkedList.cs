@@ -15,6 +15,9 @@ namespace DataStructure {
         public LinkedList( ) {
             Head = null;
         }
+        public LinkedList( T data ) {
+            Head = new Node<T>(data);
+        }
         public LinkedList( Node<T> node ) {
             Head = node;
         }
@@ -24,12 +27,16 @@ namespace DataStructure {
         /// </summary>
         /// <param name="item"></param>
         public void Append( T item ) {
+            Node<T> q = new Node<T>(item);
+            if ( IsEmpty() ) {
+                Head = q;
+                return;
+            }
             Node<T> p = Head;
             while ( p.Next != null ) {
                 p = p.Next;
             }
-            Node<T> temp = new Node<T>(item);
-            p.Next = temp;
+            p.Next = q;
         }
         /// <summary>
         /// 清空单链表
@@ -37,9 +44,35 @@ namespace DataStructure {
         public void Clear( ) {
             Head = null;
         }
-
+        /// <summary>
+        /// 删除操作
+        /// </summary>
+        /// <param name="i"></param>
+        /// <returns></returns>
         public T Delete( int i ) {
-            throw new NotImplementedException();
+            if ( IsEmpty() || i < 0 ) {//表空和位置错误情况
+                Console.WriteLine("position is error or linkedlist is empty");
+                return default(T);
+            }
+            Node<T> p = Head;
+            Node<T> q = Head;
+            if ( i == 1 ) {//头结点
+                Head = Head.Next;
+                return p.Data;
+            }
+            int j = 1;
+            while ( p.Next != null && j < i ) {
+                q = p;
+                p = p.Next;
+                j++;
+            }
+            if ( j == i ) {//找到了
+                q.Next = p.Next;
+                return p.Data;
+            } else {//位置超出链表长度
+                Console.WriteLine("Position is error");
+                return default(T);
+            }
         }
         /// <summary>
         /// 获取表元
@@ -47,23 +80,22 @@ namespace DataStructure {
         /// <param name="i"></param>
         /// <returns></returns>
         public T GetElem( int i ) {
-            T temp = default(T);
-            if ( IsEmpty() ) {
-                Console.WriteLine("Linked List is Empty");
-                return temp;
-            }
-            int len = GetLength();
-            if ( i > len ) {
-                Console.WriteLine("Position is error");
-                return temp;
+            if ( IsEmpty() || i < 0 ) {
+                Console.WriteLine("linkedlist is empty or position is error");
+                return default(T);
             }
             Node<T> p = Head;
-            int index = 1;
-            while ( index < i ) {
-                index++;
+            int j = 1;
+            if ( p.Next != null && j < i ) {
+                j++;
                 p = p.Next;
             }
-            return p.Data;
+            if ( j == i ) {
+                return p.Data;
+            } else {
+                Console.WriteLine("Position is error");
+                return default(T);
+            }
         }
 
         /// <summary>
@@ -85,31 +117,29 @@ namespace DataStructure {
         /// <param name="item"></param>
         /// <param name="i"></param>
         public void Insert( T item , int i ) {
-            if ( IsEmpty() || i < 1 ) {
-                Console.WriteLine("List is empty or position error");
+            if ( IsEmpty() ) {
+                Console.WriteLine("List is empty");
                 return;
             }
-            if ( i == 1 ) {
-                Node<T> temp = new Node<T>(item);
-                temp.Next = Head;
-                Head = temp;
-                return;
-            }
-            Node<T> p = Head;
-            Node<T> r = new Node<T>();
+            Node<T> latter = Head;
+            Node<T> former = Head;
             int j = 1;
-            while ( p.Next != null && j < i ) {
-                r = p;
-                p = p.Next;
+            while ( latter.Next != null && j < i ) {
+                former = latter;
+                latter = latter.Next;
                 ++j;
             }
             if ( j == i ) {
-                Node<T> q = new Node<T>(item);
-                q.Next = p;
-                r.Next = q;
+                former.Next = new Node<T>(item);
+                former.Next.Next = latter;
+            } else {
+                Console.WriteLine("Position is error");
             }
         }
-
+        /// <summary>
+        /// 判断链表是否为空
+        /// </summary>
+        /// <returns></returns>
         public bool IsEmpty( ) {
             return Head == null;
         }
@@ -123,14 +153,16 @@ namespace DataStructure {
                 Console.WriteLine("List is Empty!");
                 return -1;
             }
-            Node<T> p = new Node<T>();
-            p = Head;
-            int i = 1;
-            while ( !p.Data.Equals(value) && p.Next != null ) {
-                p = p.Next;
-                ++i;
-            }
-            return i;
+            Node<T> current = Head;
+            int j = 1;
+            do {
+                if ( current.Data.Equals(value) ) {
+                    return j;
+                }
+                j++;
+                current = current.Next;
+            } while ( current.Next != null );
+            return -1;
         }
     }
 }
