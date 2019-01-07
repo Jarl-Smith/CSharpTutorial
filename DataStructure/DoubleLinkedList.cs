@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructure {
     public class DoubleLinkedList<T> : IListDS<T> {
-        private DbNode<T> Head { get; set; }//双链表的头引用
+        public DbNode<T> Head { get; private set; }//双链表的头引用
         private int count;
 
         public DoubleLinkedList( ) {
@@ -96,32 +96,38 @@ namespace DataStructure {
         }
 
         public void Insert( T item , int i ) {
-            if ( IsEmpty() || i < 0 ) {
-                Console.WriteLine("DoubleLinkedList is empty or position is error");
+            if ( IsEmpty() || i < 1 ) {
+                Console.WriteLine("DbLinkedList is empty or Position is error!");
                 return;
             }
+            //在最开头插入
             if ( i == 1 ) {
-                Head = new DbNode<T>(item , null , null);
+                DbNode<T> q = new DbNode<T>(item , null , null);
+                q.Next = Head;//把"头"改成第二个元素
+                Head.Prev = q;
+                Head = q;//把自己设置为"头"
+                count++;
                 return;
             }
-            DbNode<T> current = Head;
+            DbNode<T> n = Head;
+            DbNode<T> d = new DbNode<T>();
             int j = 1;
-            while ( current.Next != null j < i){
-                current = current.Next;
+            //找到位置i的前一个元素d
+            while ( n.Next != null && j < i ) {
+                d = n;
+                n = n.Next;
                 j++;
             }
-            if ( j != i ) {
-                Console.WriteLine("Position is error");
-                return;
+            if ( j == i ) {
+                DbNode<T> q = new DbNode<T>(item);
+                d.Next = q;
+                q.Prev = d;
+                q.Next = n;
+                n.Prev = q;
+            } else {
+                Append(item);
             }
-            DbNode<T> prev = current.Prev;
-            DbNode<T> next = current.Next;
-            current = new DbNode<T>(item , null , null);
-            prev.Next = current;
-            current.Prev = prev;
-            next.Prev = current;
-            current.Next = next;
-
+            count++;
         }
 
         public bool IsEmpty( ) {

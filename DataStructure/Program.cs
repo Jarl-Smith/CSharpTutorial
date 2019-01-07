@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 namespace DataStructure {
     class Program {
         static void Main( string[] args ) {
-            string exp = "{()}[{}]";
-            Console.WriteLine(IsCorrect(exp));
+
         }
 
         /// <summary>

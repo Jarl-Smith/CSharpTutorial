@@ -16,7 +16,7 @@ namespace DataStructure {
             Next = null;
         }
         //构造器
-        public DbNode( T val , DbNode<T> p , DbNode<T> n ) {
+        public DbNode( T val = default(T) , DbNode<T> p = null , DbNode<T> n = null ) {
             Data = val;
             Prev = p;
             Next = n;

@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace DataStructure {
     public class Sorting {
-
+        /// <summary>
+        /// 冒泡排序
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        /// <param name="array"></param>
+        /// <param name="handler"></param>
+        /// <param name="desc"></param>
         public static void Bubble<T, TValue>( T[] array , Func<T , TValue> handler , bool desc = false ) where TValue : IComparable<TValue> {
             for ( int i = 0 ; i < array.Length - 1 ; i++ ) {
                 for ( int j = 0 ; j < array.Length - 1 - i ; j++ ) {
@@ -26,8 +33,15 @@ namespace DataStructure {
                 }
             }
         }
-
-        public static void Select<T, TValue>( T[] array , Func<T , TValue> handler , bool desc = false ) where TValue : IComparable<TValue> {
+        /// <summary>
+        /// 选择排序
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        /// <param name="array"></param>
+        /// <param name="handler"></param>
+        /// <param name="desc"></param>
+        public static void Selection<T, TValue>( T[] array , Func<T , TValue> handler , bool desc = false ) where TValue : IComparable<TValue> {
             for ( int i = 0 ; i < array.Length - 1 ; i++ ) {
                 for ( int j = i + 1 ; j < array.Length ; j++ ) {
                     if ( desc ) {
